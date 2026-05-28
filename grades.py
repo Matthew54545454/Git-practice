@@ -30,6 +30,16 @@ def calculate_average(scores):
     return sum(scores.values()) / len(scores)
 
 
+def print_result(scores, average):
+    """점수와 평균을 보기 좋게 출력한다."""
+    print("\n" + "=" * 30)
+    print("       성적 결과")
+    print("=" * 30)
+    for subject in SUBJECTS:
+        print(f"  {subject:<10} {scores[subject]:>6.1f}점")
+    print("-" * 30)
+    print(f"  {'평균':<10} {average:>6.1f}점")
+    print("=" * 30)
 if __name__ == "__main__":
     scores = get_scores()
     print("\n입력된 점수:", scores)
