@@ -5,6 +5,7 @@ markdown
 
 ## 기능
 - 과목별 점수 입력
+- 평균 점수 계산
 
 ## 사용법
 python grades.py
